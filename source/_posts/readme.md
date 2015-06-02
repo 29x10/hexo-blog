@@ -11,7 +11,7 @@ tags: readme
 
 ## 准备工作
 
-<iframe src="https://ghbtns.com/github-btn.html?user=twbs&repo=bootstrap&type=fork&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
+<iframe src="https://ghbtns.com/github-btn.html?user=luthur&repo=hexo-blog&type=fork&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
 
 首先fork这个项目，然后前往[Daocloud](https://www.daocloud.io/)注册账号，在代码构建页创建新项目，绑定你的github账号，选择刚才fork的项目，关闭持续集成，点击开始创建。创建完毕之后点击镜像构建，点击手动构建，点击确定。
 
