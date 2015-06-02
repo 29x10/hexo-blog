@@ -6,15 +6,15 @@ COPY source ./source/
 
 COPY _config.yml ./
 
-# Theme settings start
+# theme next
 
 RUN git clone -b v0.4.0 https://github.com/iissnan/hexo-theme-next themes/next
 
-RUN sed 's/landscape/next/g' _config.yml
-RUN sed 's/\#scheme/scheme/g' themes/next/_config.yml
-RUN sed 's/\/tags/\/tags\//g' themes/next/_config.yml
+RUN sed -i -e 's/landscape/next/g' _config.yml \
+ && sed -i -e 's/#scheme/scheme/g' themes/next/_config.yml \
+ && sed -i -e 's/\/tags/\/tags\//g' themes/next/_config.yml
 
-# Theme settings end
+# theme next
 
 RUN rm -rf public \
  && hexo generate \
